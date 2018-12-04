@@ -1,0 +1,1 @@
+package com.perilla.user.service;import com.perilla.user.dto.User;import java.util.List;public abstract interface UserService{  public abstract List<User> getUserList();    public abstract User getUserById(String paramString);}
