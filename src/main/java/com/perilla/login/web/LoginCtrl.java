@@ -30,12 +30,13 @@ public class LoginCtrl
       request.setAttribute("result", "登录失败");
       return "login";
     }
-    return "/main";
+    //return "/main";
+    return "/tools/upload";
   }
   
   @RequestMapping(value={"/logout.do"}, method={RequestMethod.POST})
   public String logout()
   {
-    return "login";
+    return "/tools/upload";
   }
 }

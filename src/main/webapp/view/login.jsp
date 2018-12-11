@@ -10,10 +10,10 @@
 <base href="<%=basePath%>" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="resource/bootstrap-4.0.0/css/bootstrap.min.css">
 <script src="resource/jquery/jquery-3.3.1.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
-<script src="resource/bootstrap/js/bootstrap.min.js"></script>
+<script src="resource/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
 					<div class="form-group">
 						 
 						<label for="exampleInputPassword1">
-							Password
+							Passworddd
 						</label>
 						<input type="password" class="form-control" id="exampleInputPassword1" name="passwd">
 					</div>

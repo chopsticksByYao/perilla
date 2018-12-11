@@ -11,10 +11,10 @@
 <base href="<%=basePath%>" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="resource/bootstrap-4.0.0/css/bootstrap.min.css">
 <script src="resource/jquery/jquery-3.3.1.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
-<script src="resource/bootstrap/js/bootstrap.min.js"></script>
+<script src="resource/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 <style>
 body {
 	position: relative;
@@ -65,7 +65,7 @@ a.footer-css:hover {
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">我的世界</a>
+  <a class="navbar-brand" href="#">Perilla</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
    <span class="navbar-toggler-icon"></span>
   </button>
@@ -340,8 +340,12 @@ a.footer-css:hover {
 		})
 		setTimeout(uploading, 500)
 	}
+	function onScrollspy(target){
+		//$('body').scrollspy({ target: target });
+		$('[data-spy="scroll"]').each(function(){
+			var $spy = $(this).scrollspy('refresh')
+		})
+	} 
 	
-	var path = "<%=basePath%>"
-	alert(path);
 </script>
 </html>
